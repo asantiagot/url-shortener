@@ -1,0 +1,33 @@
+{
+  "name": "url-shortener",
+  "version": "1.0.0",
+  "description": "basic url shortener",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asantiagot/url-shortener.git"
+  },
+  "keywords": [
+    "url-shortener",
+    "node",
+    "express",
+    "mongodb",
+    "mongo",
+    "mongoose"
+  ],
+  "author": "Jose Antonio Santiago",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asantiagot/url-shortener/issues"
+  },
+  "homepage": "https://github.com/asantiagot/url-shortener#readme",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.3"
+  }
+}
