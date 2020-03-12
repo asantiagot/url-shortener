@@ -25,11 +25,13 @@
                 </tr>
             </thead>
             <tbody>
+                <% shortUrls.forEach(shortUrl => { %>
                 <tr>
-                    <td><a href="https://www.google.com">www.google.com</a></td>
-                    <td><a href="/1234">1234</a></td>
-                    <td>10</td>
+                    <td><a href="<%= shortUrl.full %>"><%= shortUrl.full %></a></td>
+                    <td><a href="<%= shortUrl.short %>"><%= shortUrl.short %></a></td>
+                    <td><%= shortUrl.clicks %></td>
                 </tr>
+                <% }) %>
             </tbody>
         </table>
     </div>

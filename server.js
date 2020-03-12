@@ -12,8 +12,9 @@ app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: false}));
 
 // routing
-app.get('/', (req, res) => {
-    res.render('index');
+app.get('/', async (req, res) => {
+    const shortUrls = await ShortURL.find();
+    res.render('index', { shortUrls: shortUrls});
 });
 
 app.post('/shortenUrl', async (req, res) => {
